@@ -7,10 +7,37 @@
 .log-text{
     line-height: 1;
 }
+.btn-background{
+  background-color: rgba(65, 255, 107, 0.1);
+}
+.call-btn{
+  width: 47%;
+  background-color: #00A63E;
+  color: white;
+}
 
+/* .call-btn:hover{
+    background-color: gray;
+  color: white;
+} */
+.copy-btn{
+  width: 47%;
+}
 
+.category{
+  display: flex !important; 
+  /* background-color: gray;
+  padding: 5px 10px;
+  border-radius: 20px; */
+}
 
+.main-container{
+  display: grid;
+  grid-template-areas: "cart-section history-section";
+  grid-template-columns: 3fr 1fr;
+  gap:20px;
 
+}
 
 
 

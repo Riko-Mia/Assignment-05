@@ -13,20 +13,196 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 <body class="font-family">
     <!-- nav section start -->
-    <nav class="mx-[50px]">
-        <div>
+    <nav class="mx-[50px]  justify-between flex">
+        <div class="flex justify-between">
             <div class="flex items-center my-[25px] w-[50px] h-[50px]">
                 <img class="w-100" src="./assets/logo.png" alt="Logo">
-                <h1 class="text-[#006747] text-[20px] font-bold log-text">Emergency<span><br>Service</span></h1>
+                <h1 class="text-[#006747] text-[30px] font-black log-text ml-3">Emergency<span><br>Service</span></h1>
             </div>
         </div>
-        <div></div>
+        
+        <div class="flex gap-[20px] my-[25px]">
+            <div class="flex items-center py-[10px] px-[20px]  btn-background rounded-[50px] text-[16px]">
+                <h2 class="text-[16px] font-semibold ">0</h2>
+                <div class=" w-[24px] ml-2">
+                    <img class="w-100" src="./assets/heart.png" alt="Hart">
+                </div>
+            </div>
+
+            <div class="flex items-center py-[10px] px-[20px] btn-background rounded-[50px] text-[16px]">
+                <h2 class="text-[16px] font-semibold ">100</h2>
+                <div class=" w-[24px] ml-2">
+                    <img class="w-100" src="./assets/coin.png" alt="Hart">
+                </div>
+            </div>
+
+            <div class="flex items-center py-[10px] px-[20px] bg-[#00A63E] text-white rounded-[50px] text-[16px]">
+                <h2 class="text-[16px] font-semibold ">0</h2>
+                <h2 class="text-[16px] font-semibold ml-2">Copy</h2>
+                
+            </div>
+
+        </div>
     </nav>
     <!-- nav section End -->
+
+    <section class="h-[240px] items-center w-[100%] text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <div class="cart">
+            <div class="w-[92px] items-center py-[20px] m-auto">
+                <img class=" W-100 " src="./assets/logo-dark.png" alt=""></div>
+            <h1 class="font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1>
+            <p  class="font-semibold text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+        
+    </section>
+
+
+
+    <!-- cart section start -->
+     <!-- <div class="m-[32px]">
+        <div class="flex justify-between ">
+            <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
+                <img class="p-[14px]" src="./assets/fire-service.png">
+            </div>
+        </div>
+        <div class="card-text-body">
+            <h2 class="card-title text-[24px] font-bold">
+                জাতীয় জরুরি সেবা
+            </h2>
+            <p class="text-[#5C5C5C] text-[18px]">National Emergency</p>
+
+            <h2  class="card-title text-[24px] font-bold">
+                999
+            </h2>
+    
+            <div><span class=" bg-gray-400 py-2 px-3 rounded-3xl text-[#5C5C5C] text-[18px]">সার্বজনীন</span></div>
+            <div class="card-actions justify-between mt-3">
+                <div class="btn copy-btn"><i class="fa-regular fa-copy"></i> Copy</div>
+                <button class="btn call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+        </div>
+    </div> -->
+
+
+
+     <div class="flex main-container bg-[#41ff6b1a] h-[100%]">
+        <div class="cart-section justify-between ">
+            <!-- cart  -->
+            <div class=" flex flex-wrap m-[32px] gap-5 justify-between">
+
+
+                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                    <div class="flex justify-between ">
+                    <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
+                    <img class="p-[14px]" src="./assets/fire-service.png">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card-text-body">
+                        <h2 class="card-title text-[24px] font-bold">
+                            জাতীয় জরুরি সেবা
+                        </h2>
+                            <p class="text-[#5C5C5C] text-[18px]">National Emergency</p>
+
+                            <h2  class="card-title text-[24px] font-bold mt-6 mb-3">
+                                999
+                            </h2>
+        
+                            <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">সার্বজনীন</span></div>
+                        <div class="card-actions justify-between mt-8">
+                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+        <!-- <div class="history-section ">
+            <p>hello history</p>
+            <p>hello history</p>
+        </div> -->
+             </div>
+        </div>
+
+        <div class="history-section my-8">
+            <div class=" bg-white w-[436px] p-[28px] rounded-3xl h-[100%]">
+                <div class="flex justify-between mb-8">
+                    <div class="flex items-center gap-3"><i class=" text-[23px] fa-regular fa-clock"></i> <p class="text-[20px] font-semibold">Call History</p></div>
+                    <button class="text-[16px] font-semibold ml-2 btn py-[10px] px-[20px] bg-[#00A63E] text-white rounded-[50px]">Clear</button>
+                </div>
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+                
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+                
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+                
+                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                    <div>
+                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
+                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                    </div>
+                    <p class="text-[18px]">11:36:58 AM</p>
+                </div>
+
+
+
+                
+
+
+            </div>
+        </div>
+     </div>
+    <!-- cart section end -->
 
     <script src="index.js"></script>
 </body>
