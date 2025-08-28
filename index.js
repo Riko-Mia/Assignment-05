@@ -7,6 +7,7 @@ const copyNum = document.getElementById("copy-text")
 const hartText = document.getElementById("hart-text")
 const hartClass = document.getElementsByClassName("fa-heart")
 let historyes = []
+let duplicates =[]
 let copyCount = 0
 let heartCountNum = 0
 
@@ -78,6 +79,9 @@ function callFunction(e){
             coins.innerText = '0'
             alert('need coin')
         }
+
+console.log(historyes, '==============')
+
     }
     }
 
@@ -106,9 +110,11 @@ function callFunction(e){
  } 
 
 
+
 function getHistory(){
 
     for (let h of historyes){
+        
 
                 const p = document.createElement("p")
                 const p2 = document.createElement("p")
@@ -125,16 +131,17 @@ function getHistory(){
                 let para3 = createDiv.appendChild(p3) 
                 para3.innerText = h.date
 
-                
+                                                        
                 historyesSection.appendChild(createDiv)
 
 
 
+console.log(h)
 
             }
 }
 
-
+// console.log(historyes)
 
 
 
