@@ -33,21 +33,21 @@
         
         <div class="flex gap-[20px] my-[25px]">
             <div class="flex items-center py-[10px] px-[20px]  btn-background rounded-[50px] text-[16px]">
-                <h2 class="text-[16px] font-semibold ">0</h2>
+                <h2 id="hart-text" class="text-[16px] font-semibold ">0</h2>
                 <div class=" w-[24px] ml-2">
                     <img class="w-100" src="./assets/heart.png" alt="Hart">
                 </div>
             </div>
 
             <div class="flex items-center py-[10px] px-[20px] btn-background rounded-[50px] text-[16px]">
-                <h2 class="text-[16px] font-semibold ">100</h2>
+                <h2 id="coins" class="text-[16px] font-semibold ">100</h2>
                 <div class=" w-[24px] ml-2">
                     <img class="w-100" src="./assets/coin.png" alt="Hart">
                 </div>
             </div>
 
             <div class="flex items-center py-[10px] px-[20px] bg-[#00A63E] text-white rounded-[50px] text-[16px]">
-                <h2 class="text-[16px] font-semibold ">0</h2>
+                <h2 class="text-[16px] font-semibold" id="copy-text">0</h2>
                 <h2 class="text-[16px] font-semibold ml-2">Copy</h2>
                 
             </div>
@@ -127,12 +127,12 @@
                 </div> -->
 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class="parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/ambulance.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -146,20 +146,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">সার্বজনীন</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button onclick="copyText('জাতীয় জরুরি সেবা')" id="copy-text" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                            <button onclick="callFunction('জাতীয় জরুরি সেবা')"  class="btn call-btn rounded-lg" id="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/police.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -173,20 +173,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">পুলিশ</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('পুলিশ')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('পুলিশ')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
-                
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                 
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/fire-service.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -200,20 +200,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">ফায়ার</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('ফায়ার সার্ভিস')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('ফায়ার সার্ভিস')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/fire-service.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -227,20 +227,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">স্বাস্থ্য</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('অ্যাম্বুলেন্স')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('অ্যাম্বুলেন্স')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/emergency.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -254,20 +254,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">সহায়তা</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('নারী ও শিশু সহায়তা')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('নারী ও শিশু সহায়তা')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/emergency.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -281,20 +281,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">সরকারি</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('দুদক')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button  onclick="callFunction('দুদক')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/heart.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -308,20 +308,20 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">বিদ্যুৎ</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('বিদ্যুৎ বিভ্রাট')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('বিদ্যুৎ বিভ্রাট')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/brac.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
@@ -335,23 +335,23 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">এনজিও</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div  onclick="copyText('ব্রাক')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button onclick="callFunction('ব্রাক')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 
-                <div class=" bg-white w-[436px] p-[28px] rounded-3xl">
+                <div class=" parent-cart bg-white w-[436px] p-[28px] rounded-3xl">
                     <div class="flex justify-between ">
                     <div class="bg-[#FFE3E2] w-[60px] mb-5 rounded-xl">
                     <img class="p-[14px]" src="./assets/Bangladesh-Railway.png">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i onclick="heartCount()" class="fa-regular fa-heart"></i>
                     </div>
                     <div class="card-text-body">
                         <h2 class="card-title text-[24px] font-bold">
-                            বাংলােদেশ রেলওয়ে
+                            বাংলাদেশ রেলওয়ে
                         </h2>
                             <p class="text-[#5C5C5C] text-[18px]">Bangladesh Railway</p>
 
@@ -361,8 +361,8 @@
         
                             <div><span class=" bg-gray-300  py-2 px-4 rounded-3xl text-[#5C5C5C] text-[18px]">পরিবহন</span></div>
                         <div class="card-actions justify-between mt-8">
-                            <div class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
-                            <button class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                            <div onclick="copyText('বাংলাদেশ রেলওয়ে')" class="btn copy-btn rounded-lg"><i class="fa-regular fa-copy"></i> Copy</div>
+                            <button  onclick="callFunction('বাংলাদেশ রেলওয়ে')" class="btn call-btn rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
@@ -383,62 +383,17 @@
             <div class=" bg-white w-[436px] p-[28px] rounded-3xl h-[100%]">
                 <div class="flex justify-between mb-8">
                     <div class="flex items-center gap-3"><i class=" text-[23px] fa-regular fa-clock"></i> <p class="text-[20px] font-semibold">Call History</p></div>
-                    <button class="text-[16px] font-semibold ml-2 btn py-[10px] px-[20px] bg-[#00A63E] text-white rounded-[50px]">Clear</button>
+                    <button onclick="clearBtn()" id="clear"  class="text-[16px] font-semibold ml-2 btn py-[10px] px-[20px] bg-[#00A63E] text-white rounded-[50px]">Clear</button>
                 </div>
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
+                <div   id="historyes"></div>
+
+                <!-- <div id="historyes" class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
                     <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
+                        <p class="text-[18px]"> </p>
+                        <p class="text-[18px] text-[#5C5C5C]"> </p>
                     </div>
                     <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
-                    <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
-                    </div>
-                    <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
-                    <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
-                    </div>
-                    <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-                
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
-                    <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
-                    </div>
-                    <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-                
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
-                    <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
-                    </div>
-                    <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-                
-                <div class="flex justify-between items-center p-5 bg-[#FAFAFA] rounded-xl mb-4">
-                    <div>
-                        <p class="text-[18px]">জাতীয় জরুরি সেবা</p>
-                        <p class="text-[18px] text-[#5C5C5C]">999</p>
-                    </div>
-                    <p class="text-[18px]">11:36:58 AM</p>
-                </div>
-
-
-
-                
+                </div> -->
 
 
             </div>

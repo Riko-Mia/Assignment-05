@@ -36,7 +36,24 @@
   grid-template-areas: "cart-section history-section";
   grid-template-columns: 3fr 1fr;
   gap:20px;
+}
 
+.historyes{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.historyes div p {
+  font-size: 18px;
+}
+
+.historyes p {
+  font-size: 18px;
 }
 
 
