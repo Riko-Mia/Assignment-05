@@ -57,6 +57,29 @@
 }
 
 
+@media (max-width: 768px) {
+    .main-container {
+      grid-template-areas:
+        "cart-section" 
+        "history-section";
+      grid-template-columns: 1fr;
+    }
 
-
-
+    .nav-bar{
+      display: block;
+      margin-bottom: -10px;
+      margin-top: 10px;
+    }
+    .nav-text{
+      justify-content: space-between;
+    }
+    .cart{
+      padding: 20px;
+    }
+    .parent-cart{
+      width: 100%;
+    }
+    .history-cart{
+      width: 100%;
+    }
+  }
